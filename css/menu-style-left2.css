@@ -1,0 +1,22 @@
+.btnMenuMobile{ padding: 5px;border: 1px solid #ccc;width: 47px;font-size: 24px;text-align: center;border-radius: 4px;background: #fff;color: #4a4848;display: none;position: absolute;right: 5px;top: 12px;z-index: 5000; }
+.menuMobile{ /*display: none; */}
+
+.menuMobile{ font-family: arial;transition: all 0.9s;-moz-transition: all 0.9s;-webkit-transition: all 0.9s;-o-transition: all 0.9s;overflow-y: scroll;overflow: auto;position: fixed;top: 0;left: -100%;width: 280px;background: #607475;z-index: 100;height: 100%;opacity: 0;box-shadow: 0px 5px 6px #ff2b2e; }
+.menuMobile .boxTop{ background:url('../images/icon/top-bg.jpg') 0 0 no-repeat; }
+.menuMobile .boxTop img{ width: 100%; }
+.menuMobile{  }
+.menuMobile ul{     padding-top: 0px;background: #fff;list-style: none;margin: 0px;padding: 0px; }
+.menuMobile ul li{  }
+.menuMobile ul li.home_button{ display: none; }
+.menuMobile ul li a{ font-weight: bold;display: block;padding: 8px 12px;font-size: 12px;color: #444;border-bottom: 1px solid #e1e1e1; }
+.menuMobile ul li ul li{ padding-left: 15px; }
+.menuMobile ul li.active a{ background: #1B9BCC;color: #fff; }
+.menuMobile ul li a img{ width: 110px; }
+.menuLogo{ text-align: center; }
+.bgMenuShow{ box-shadow: 0 0 7px #333;width: 100%;height: 100%;position: fixed;z-index: 9;
+background: rgba(255,255,255,0.5);top: 0;right: 0;display: none; }
+.open{ top: 0;bottom: 0;position: fixed !important;display: block; }
+
+@media only screen and (max-width: 992px) {
+	.btnMenuMobile { display: block;position: fixed; }
+}

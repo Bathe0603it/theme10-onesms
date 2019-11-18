@@ -1,0 +1,135 @@
+@media screen and (max-width: 20000px) and (min-width: 1100px){
+	
+}
+
+@media only screen and (max-width: 1180px) {
+	
+}
+
+@media only screen and (max-width: 1024px) {
+	
+}
+
+@media only screen and (max-width: 1000px) {
+	
+}
+ 
+@media only screen and (max-width: 980px) {
+	
+}
+
+@media only screen and (max-width: 992px){
+	.main-header .menu-top{ display: none; }
+	.main-header .menu-main{ height: 35px; }
+	.main-header .menu-main .mini-box{ display: none; }
+	.menuMobile ul li a img { width: 100%; }
+	.container{ max-width: 95%; }
+}
+
+@media only screen and (max-width: 880px) {
+	
+}
+ 
+@media only screen and (max-width: 800px) {
+	
+}
+ 
+@media only screen and (max-width: 780px) {
+	
+}
+ 
+/*Ipad dọc(768 x 1024)*/
+@media only screen and (max-width: 768px) {
+	.main-header .head-foot{ background-size: contain; }
+	.main-header .head-foot .box-head-foot{ flex-wrap: wrap; }
+	.main-header .head-foot .mini-box.date-time{ width: 100%; }
+	.main-header .head-foot .mini-box.scroll-left{ width: 100%; }
+	.main-content .title-main{ font-size: 18px; }
+}
+	
+ 
+@media only screen and (max-width: 720px) {
+	
+}
+
+@media only screen and (max-width: 668px) {
+	
+}
+ 
+@media only screen and (max-width: 640px) {
+	
+}
+ 
+@media only screen and (max-width: 600px) {
+	
+}
+ 
+@media only screen and (max-width: 568px) {
+	.container{ max-width: 100%; }
+	.main-bound .list-top{ flex-wrap: wrap; }
+	.main-bound .list-top .left-list{ width: 100%; }
+	.main-bound .list-top .right-list{ width: 100%; }
+	.main-bound .list-vanban-category .list-item .info .left-item{ border: none; }
+	.main-bound .list-vanban-category .list-item .info .left-item .is-file{ border-bottom: 1px dashed #ddd;padding-bottom: 10px;margin-bottom: 10px; }
+}
+ 
+@media only screen and (max-width: 563px) {
+	
+}
+ 
+@media only screen and (max-width: 549px) {
+ 
+}
+ 
+@media only screen and (max-width: 534px) {
+	
+}
+
+/*Tablet nhỏ(480 x 640)*/
+@media only screen and (max-width: 480px) {
+	
+}
+
+/*Iphone(480 x 640)*/
+@media only screen and (max-width: 435px) {
+	
+}
+
+/*Iphone(480 x 640)*/
+@media only screen and (max-width: 411px) {
+	.main-bound .list-post-category .list-item{ flex-wrap: wrap; }
+	.main-bound .list-post-category .list-item .image{ width: 100%;margin-bottom: 10px; }
+	.main-bound .list-post-category .list-item .info{ width: 100%; }
+}
+
+/*Iphone6(480 x 640)*/
+@media only screen and (max-width: 375px) {
+	
+}
+	
+
+@media only screen and (max-width: 360px) {
+	
+}
+ 
+@media only screen and (max-width: 338px) {
+	
+}
+ 
+@media only screen and (max-width: 330px) {
+
+}
+
+/*Smart phone nhỏ iphone5*/
+@media only screen and (max-width: 320px) {
+	
+}
+
+@media only screen and (max-width: 306px) {
+	
+}
+
+/*Smart phone nhỏ*/
+@media only screen and (max-width: 240px) {
+	
+}
