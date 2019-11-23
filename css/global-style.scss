@@ -66,6 +66,18 @@ a:hover, a:focus {
     
 }
 
+.box-order-room-hidden{
+    width: 0px !important;
+    opacity: 0;
+    height: 0px !important;
+}
+
+.box-order-room-show{
+    width: 100% !important;
+    opacity: 1;
+    height: auto !important;
+}
+
 .main-header {
     .header-top{
         display: flex;
@@ -131,6 +143,7 @@ a:hover, a:focus {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        background-attachment: fixed;
         padding: 2rem 1rem;
         color: white;
         text-align: center;
@@ -196,6 +209,19 @@ a:hover, a:focus {
                         }
                         button{
                             background: #e6b205;
+                        }
+                        .box-order-room{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .box-order-info-room{
+                                width: 99%;
+                            }
+                            .box-order-user-room{
+                                @include transitionFun;
+                            }
+                            .cpn-order-room{
+                                @include transitionFun;
+                            }
                         }
                     }
                     .form-right-contant{
@@ -506,19 +532,7 @@ a:hover, a:focus {
 }
 
 @media screen and (max-width: 20000px) and (min-width: 1100px){
-    .main-content{
-        .box-content-submit{
-            .content-top{
-                justify-content: center;
-                .left{
-                    width: 80%;
-                }
-                .right{
-                    width: 1px;
-                }
-            }
-        }
-    }
+    
 }
 
 @media only screen and (max-width: 1180px) {

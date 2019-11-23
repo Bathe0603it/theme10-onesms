@@ -176,3 +176,19 @@ function waittingImage(imageChange){
 	}, 1000);
 	imageRoom.attr("src", imageLoadUrl);
 }
+
+function hiddenParent1(){
+	$('.box-order-user-room').removeClass('box-order-room-hidden');
+	$('.box-order-user-room').addClass('box-order-room-show');
+
+	$('.box-order-info-room').removeClass('box-order-room-show');
+	$('.box-order-info-room').addClass('box-order-room-hidden');
+}
+
+function hiddenParent2(){
+	$('.box-order-user-room').removeClass('box-order-room-show');
+	$('.box-order-user-room').addClass('box-order-room-hidden');
+
+	$('.box-order-info-room').removeClass('box-order-room-hidden');
+	$('.box-order-info-room').addClass('box-order-room-show');
+}

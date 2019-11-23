@@ -55,64 +55,88 @@
 						<div class="left">
 							<section class="form-booking-operator">
 								<section class="form-contant">
-									<p class="title">Đặt những hội trường độc đáo và những điều nên trải nghiệm.</p>
 									<form action="">
-									    <div class="form-group">
-									        <label for="">Địa điểm(khu vực muốn tổ chức):</label>
-									        <input type="text" name="" class="form-control" id="" placeholder="Bất cứ đâu">
-									    </div>
-									    <div class="form-group">
-									        <label for="">Ngày bắt đầu sự kiện:</label>
-									        <div class="row">
-									        	<div class="col-md-6 col-sm-12">
-									        		<input type="text" name="" class="form-control" id="clock-setup" placeholder="">
-									        	</div>
-									        	<div class="col-md-2 col-sm-4 center-all">
-									        		<label>Khoảng</label>
-									        	</div>
-									        	<div class="col-md-4 col-sm-8">
-									        		<select class="form-control" name="">
-									        			<option>Nửa ngày</option>
-									        			<option>1 ngày</option>
-									        			<option>2 ngày</option>
-									        			<option>3 ngày</option>
-									        			<option>4 ngày</option>
-									        			<option>nhiều hơn 5 ngày</option>
+										<p class="title">Đặt những hội trường độc đáo và những điều nên trải nghiệm.</p>
+										<div class="box-order-room">
+											<div class="cpn-order-room box-order-info-room">
+											    <div class="form-group">
+											        <label for="">Địa điểm(khu vực muốn tổ chức):</label>
+											        <input type="text" name="" class="form-control" id="" placeholder="Bất cứ đâu">
+											    </div>
+											    <div class="form-group">
+											        <label for="">Ngày bắt đầu sự kiện:</label>
+											        <div class="row">
+											        	<div class="col-md-6 col-sm-12">
+											        		<input type="text" name="" class="form-control" id="clock-setup" placeholder="">
+											        	</div>
+											        	<div class="col-md-2 col-sm-4 center-all">
+											        		<label>Khoảng</label>
+											        	</div>
+											        	<div class="col-md-4 col-sm-8">
+											        		<select class="form-control" name="">
+											        			<option>Nửa ngày</option>
+											        			<option>1 ngày</option>
+											        			<option>2 ngày</option>
+											        			<option>3 ngày</option>
+											        			<option>4 ngày</option>
+											        			<option>nhiều hơn 5 ngày</option>
+											        		</select>
+											        	</div>
+											        </div>
+											    </div>
+											    <div class="form-group">
+											        <label for="">Bố trí phòng:</label>
+											        <select class="form-control cpn-layer-room" name="" onchange="layerRoomChange(this);">
+									        			<option value="tiec">Tiệc</option>
+									        			<option value="vong-luoi-liem">Vòng lưỡi liềm (5-7 người/1 bàn)</option>
+									        			<option value="lop-hoc">Lớp học</option>
+									        			<option value="rap-hat">Rạp hát</option>
+									        			<option value="phong-hop">Phòng họp</option>
+									        			<option value="quang-truong-rong">Quảng trường rỗng</option>
+									        			<option value="le-tan">Lễ tân (Không dùng ghế ngồi)</option>
+									        			<option value="hoi-nghi">Hội nghị</option>
+									        			<option value="hinh-chu-u">Hình chữ U</option>
+									        			<option value="ban-dang-ki">Bàn đăng kí</option>
 									        		</select>
-									        	</div>
-									        </div>
+											    </div>
+											    <div class="form-group">
+											        <label for="">Số người:</label>
+											        <input type="number" name="" onKeyUp="memberRoomChange(this);" class="form-control cpn-member-room" id="">
+											    </div>
+											    <div class="form-group">
+											        <label for="">Kích thước phòng mong muốn:</label>
+											        <div class="row">
+											        	<div class="col-md-8 col-sm-8 col-8">
+											        		<input type="number" name="" class="form-control" id="">
+											        	</div>
+											        	<div class="col-md-4 col-sm-4 col-4 center-all">
+											        		<label>m<sup>2</sup></label>
+											        	</div>
+											        </div>
+											    </div>
+											    <button type="button" class="btn btn-warning" onclick="hiddenParent1('cpn-order-room')">Đặt ngay</button>
+										    </div>
+										    <div class="cpn-order-room box-order-user-room box-order-room-hidden">
+										    	<div class="form-group">
+											        <label for="">Họ và tên:</label>
+											        <input type="text" name="" class="form-control" id="" placeholder="Nhập họ và tên">
+											    </div>
+											    <div class="form-group">
+											        <label for="">Số điện thoại:</label>
+											        <input type="text" name="" class="form-control" id="" placeholder="Số điện thoại">
+											    </div>
+											    <div class="form-group">
+											        <label for="">Email:</label>
+											        <input type="text" name="" class="form-control" id="" placeholder="Email của bạn">
+											    </div>
+											    <div class="form-group">
+											        <label for="">Địa chỉ:</label>
+											        <input type="text" name="" class="form-control" id="" placeholder="Địa chỉ">
+											    </div>
+											    <button type="button" class="btn btn-info" onclick="hiddenParent2('cpn-order-room')"><i class="fa fa-angle-left"></i></button>
+											    <button type="button" class="btn btn-warning">Đặt ngay</button>
+										    </div>
 									    </div>
-									    <div class="form-group">
-									        <label for="">Bố trí phòng:</label>
-									        <select class="form-control cpn-layer-room" name="" onchange="layerRoomChange(this);">
-							        			<option value="tiec">Tiệc</option>
-							        			<option value="vong-luoi-liem">Vòng lưỡi liềm (5-7 người/1 bàn)</option>
-							        			<option value="lop-hoc">Lớp học</option>
-							        			<option value="rap-hat">Rạp hát</option>
-							        			<option value="phong-hop">Phòng họp</option>
-							        			<option value="quang-truong-rong">Quảng trường rỗng</option>
-							        			<option value="le-tan">Lễ tân (Không dùng ghế ngồi)</option>
-							        			<option value="hoi-nghi">Hội nghị</option>
-							        			<option value="hinh-chu-u">Hình chữ U</option>
-							        			<option value="ban-dang-ki">Bàn đăng kí</option>
-							        		</select>
-									    </div>
-									    <div class="form-group">
-									        <label for="">Số người:</label>
-									        <input type="number" name="" onKeyUp="memberRoomChange(this);" class="form-control cpn-member-room" id="">
-									    </div>
-									    <div class="form-group">
-									        <label for="">Kích thước phòng mong muốn:</label>
-									        <div class="row">
-									        	<div class="col-md-8 col-sm-8 col-8">
-									        		<input type="number" name="" class="form-control" id="">
-									        	</div>
-									        	<div class="col-md-4 col-sm-4 col-4 center-all">
-									        		<label>m<sup>2</sup></label>
-									        	</div>
-									        </div>
-									    </div>
-									    <button type="submit" class="btn btn-warning">Đặt ngay</button>
 									</form>
 								</section>
 								<section class="form-right-contant">
